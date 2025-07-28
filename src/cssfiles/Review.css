@@ -1,0 +1,114 @@
+/* Container */
+.review-container {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+    padding: 40px 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, #fdfcfb, #e2d1c3);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Header Section */
+  .review-header {
+    margin-bottom: 40px;
+  }
+  
+  .review-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .leave-review-btn {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .leave-review-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 126, 95, 0.3);
+  }
+  
+  /* Slider Wrapper */
+  .review-slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  /* Slider Section */
+  .review-slider {
+    display: flex;
+    transition: transform 0.8s ease-in-out; /* Smooth sliding animation */
+  }
+  
+  .review-card {
+    flex: 0 0 100%; /* Each card takes up the full width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .review-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .review-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+    max-width: 600px;
+  }
+  
+  .review-stars {
+    font-size: 1.2rem;
+    color: #ffcc00;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  /* Indicators */
+  .slider-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+    background: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .indicator.active {
+    background: #ff7e5f;
+  }
+  

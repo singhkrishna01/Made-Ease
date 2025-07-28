@@ -1,0 +1,240 @@
+.home-container {
+    max-width: 1200px;
+    margin: 9rem auto;
+    padding: 0 20px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("/babycaretaker.jpeg") center/cover no-repeat;
+    height: 28rem;
+    border-radius: 20px;
+    overflow: hidden;
+    color: white;
+    text-align: left;
+    position: relative;
+  }
+  
+  .hero-text h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    line-height: 1.2;
+  }
+  
+  .hero-text p {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    font-weight: 300;
+  }
+  
+  .hero-btn {
+    padding: 12px 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: linear-gradient(45deg, #6a11cb, #d4a373);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 2rem;
+    text-transform: uppercase;
+  }
+  
+  .hero-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(106, 17, 203, 0.3);
+  }
+  
+  /* About Section */
+  .about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    margin: 4rem auto;
+    padding: 3rem;
+    max-width: 1200px;
+    background: linear-gradient(to bottom, #ffffff, #f7f8fc);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-image video {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .about-text {
+    flex: 1;
+    text-align: left;
+    color: #444;
+  }
+  
+  .about-text h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+  }
+  
+  .about-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #666;
+    text-align: justify;
+  }
+  
+  @media (max-width: 768px) {
+    .about-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-image video {
+      max-width: 90%;
+    }
+  
+    .about-text h2 {
+      font-size: 2.2rem;
+    }
+  
+    .about-text p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Slideshow Section */
+  .slideshow-section {
+    text-align: center;
+    margin: 40px 0;
+    position: relative;
+  }
+  
+  .slideshow {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    height: 320px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .slide {
+    min-width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    position: absolute;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  .slide.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .slideshow-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .dot.active {
+    background-color: #6a11cb;
+    transform: scale(1.2);
+  }
+  
+  /* Services Section */
+  .services-section {
+    text-align: center;
+    margin: 4rem 0;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+  
+  .service-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .service-card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* General Button Styling */
+  button {
+    cursor: pointer;
+    outline: none;
+  }
+  

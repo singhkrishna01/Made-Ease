@@ -1,0 +1,102 @@
+/* General Container */
+.super-container{
+  margin-top: 4rem;
+}
+.contact-page-container {
+  font-family: "Roboto", sans-serif;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  background-color: #f7f7f9;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.contact-page-title {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Call Now Button */
+.contact-page-call-btn {
+  background: linear-gradient(45deg, #d4a373, #feb47b);
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  margin: 20px auto;
+}
+
+.contact-page-call-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 126, 95, 0.3);
+}
+
+/* Contact Details Section */
+.contact-page-details {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, #fdfcfb, #e2d1c3);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-page-info-heading {
+  font-size: 1.2rem;
+  margin: 15px 0 5px;
+  color: #555;
+}
+
+.contact-page-info-text {
+  margin: 5px 0;
+  font-size: 1rem;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Image Section */
+.contact-page-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Map Section */
+.contact-page-map iframe {
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .contact-page-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-page-map {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-page-title {
+    font-size: 3rem;
+  }
+
+  .contact-page-call-btn {
+    font-size: 1.5rem;
+    padding: 15px 40px;
+  }
+}

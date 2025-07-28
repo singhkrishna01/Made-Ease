@@ -1,0 +1,16 @@
+:root {
+    --primary-bg: #1f2937;
+    --secondary-bg: #111827;
+    --accent: #38bdf8;
+    --text-light: #ffffff;
+    --text-dark: #d1d5db;
+    --hover-bg: #2563eb;
+      }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Varela Round", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
